@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+<div class="grid 
+            lg:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 md:grid-cols-1
+            lg:grid-rows-1 sm:grid-rows-4 xs:grid-rows-4 md:grid-rows-1
+            gap-4 mx-4">
+    <div class="xs:row-span-2 xs:flex xs:items-center xs:justify-center
+                sm:row-span-2 sm:flex sm:items-center sm:justify-center
+                md:row-span-2 md:flex md:items-center md:justify-center">
+        <div class="flex flex-col justify-center xs:pt-4 ">
+            <h1 class="text-center text-4xl lg:text-5xl font-bold text-green-700">Agencia de viajes</h1>
+            <p class="text-center mb-4 lg:mb-6 text-gray-950">¡Descubre tu próximo viaje con Malaquita! Sumérgete en destinos únicos, vive experiencias inolvidables y crea recuerdos que perdurarán toda la vida. ¿Listo para comenzar tu aventura? Solicita ahora tu cotización personalizada y déjanos convertir tus sueños de viaje en realidad.</p>
+            <div class="flex justify-center">
+                <a href="{% url 'cotizacion' %}" class="self-center mt-4 lg:mt-6 rounded-lg bg-green-500 py-3 px-6 font-sans text-xs lg:text-sm font-bold uppercase text-white shadow-md shadow-green-500/20 transition-all hover:shadow-lg hover:shadow-green-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none" data-ripple-light="true">
+                    Quiero una cotización
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="xs:row-span-2 sm:row-span-2 md:row-span-2">
+        <div>
+            <img src="{% static 'imagen1.jpg' %}" class="w-full h-auto" alt="Imagen">
+        </div>
+    </div>
+</div>
+{% endblock %}
