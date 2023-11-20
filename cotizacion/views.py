@@ -17,11 +17,11 @@ def enviar_cotizacion(request):
         telefono = request.POST.get('telefono')
         destino = request.POST.get('destino')
         origen = request.POST.get('origen')
-        cantidad_personas = request.POST.get('cantidad_personas')
-        mayores_de_edad = request.POST.get('mayores_de_edad')
-        menores_de_edad = request.POST.get('menores_de_edad')
+        adultos = request.POST.get('adultos')
+        menores = request.POST.get('menores')
         acomodo_habitaciones = request.POST.get('acomodo_habitaciones')
         todo_incluido = request.POST.get('todo_incluido')
+        hospedaje = request.POST.get('hospedaje')
         sencillo = request.POST.get('sencillo')
         desde = request.POST.get('desde')
         hasta = request.POST.get('hasta')
@@ -33,11 +33,11 @@ def enviar_cotizacion(request):
             'telefono': telefono,
             'destino': destino,
             'origen': origen,
-            'cantidad_personas': cantidad_personas,
-            'mayores_de_edad': mayores_de_edad,
-            'menores_de_edad': menores_de_edad,
+            'adultos': adultos,
+            'menores': menores,
             'acomodo_habitaciones': acomodo_habitaciones,
             'todo_incluido': todo_incluido,
+            'hospedaje': hospedaje,
             'sencillo': sencillo,
             'desde': desde,
             'hasta': hasta,

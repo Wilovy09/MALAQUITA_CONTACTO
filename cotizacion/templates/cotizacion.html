@@ -36,29 +36,32 @@
             <input required type="text" id="origen" placeholder="Monterrey" name="origen" class="accent-green-500 w-full border-gray-300 rounded-md p-2">
         </div>
         <div class="mb-4">
-            <label for="cantidad_personas" class="block">Cuantas personas</label>
-            <input type="text" id="cantidad_personas" placeholder="5" name="cantidad_personas" class="accent-green-500 w-full border-gray-300 rounded-md p-2">
+            <label for="adultos" class="block">Adultos</label>
+            <input type="text" id="adultos" placeholder="2" name="adultos" class="accent-green-500 w-full border-gray-300 rounded-md p-2">
         </div>
         <div class="mb-4">
-            <label for="mayores_de_edad" class="block">Edades de los mayores de edad</label>
-            <input type="text" id="mayores_de_edad" placeholder="35 y 38" name="mayores_de_edad" class="accent-green-500 w-full border-gray-300 rounded-md p-2">
+            <label for="menores" class="block">Menores</label>
+            <input type="text" id="menores" placeholder="2" name="menores" class="accent-green-500 w-full border-gray-300 rounded-md p-2">
         </div>
         <div class="mb-4">
-            <label for="menores_de_edad" class="block">Edades de los menores de edad</label>
-            <input type="text" id="menores_de_edad" placeholder="15, 12 y 10" name="menores_de_edad" class="accent-green-500 w-full border-gray-300 rounded-md p-2">
-        </div>
-        <div class="mb-4">
-            <label for="acomodo_habitaciones" class="block">Acomodo de habitaciones?</label>
-            <input type="text" id="acomodo_habitaciones" placeholder="2 camas" name="acomodo_habitaciones" class="accent-green-500 w-full border-gray-300 rounded-md p-2">
+            <label for="acomodo_habitaciones" class="block">Habitaciones</label>
+            <input type="text" id="acomodo_habitaciones" placeholder="2 cuartos con 2 camas cada uno" name="acomodo_habitaciones" class="accent-green-500 w-full border-gray-300 rounded-md p-2">
         </div>
         <div class="mb-4 flex justify-between items-center">
             <div class="flex items-center">
-                <input type="checkbox" name="todo_incluido" id="todo_incluido" class="mr-2 accent-green-500 ">
-                <label for="todo_incluido">Todo incluido</label>
+                <label for="todo_incluido">
+                    <input type="checkbox" name="todo_incluido" id="todo_incluido" class="mr-2 accent-green-500 ">Todo incluido
+                </label>
             </div>
             <div class="flex items-center">
-                <label for="sencillo" class="mr-2">Solo desyuno</label>
-                <input type="checkbox" name="sencillo" id="sencillo" class="accent-green-500 ">
+                <label for="sencillo" class="mr-2">
+                    <input type="checkbox" name="sencillo" id="sencillo" class="accent-green-500"> Solo desayuno
+                </label>
+            </div>
+            <div class="flex items-center">
+                <label for="hospedaje" class="mr-2">
+                    <input type="checkbox" name="hospedaje" id="hospedaje" class="accent-green-500 "> Solo hospedaje
+                </label>
             </div>
         </div>
         <div class="mb-4 flex justify-between">
