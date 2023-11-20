@@ -3,6 +3,9 @@ from django.shortcuts import render, redirect
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 from django.contrib import messages
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 def cotizacion(request):
     return render(request, 'cotizacion.html', {})
@@ -44,7 +47,7 @@ def enviar_cotizacion(request):
             subject,
             template,
             settings.EMAIL_HOST_USER,
-            ['malaquitaagenciadeviajes@gmail.com'] #correo que recibira el mensaje
+            [os.getenv('CORREO')] #correo que recibira el mensaje
         )
 
         email.fail_silently = False
