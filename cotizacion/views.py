@@ -44,7 +44,7 @@ def enviar_cotizacion(request):
             subject,
             template,
             settings.EMAIL_HOST_USER,
-            ['emilianom179@gmail.com'] #correo que recibira el mensaje
+            ['malaquitaagenciadeviajes@gmail.com'] #correo que recibira el mensaje
         )
 
         email.fail_silently = False
